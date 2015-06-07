@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [incanter/incanter-core "1.5.6"]
                  [incanter/incanter-io "1.5.6"]
-                 [org.clojure/data.json "0.2.6"]])
+                 [org.clojure/data.json "0.2.6"]
+                 [org.clojure/java.jdbc "0.3.7"]
+                 [org.xerial/sqlite-jdbc "3.8.10.1"]])
