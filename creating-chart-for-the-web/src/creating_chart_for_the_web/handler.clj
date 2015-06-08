@@ -7,8 +7,7 @@
 (defroutes app-routes
   (GET "/" [] (redirect "/data/census-race.json"))
   (route/resources "/")
-  (route/not-found "Not Found")
-  )
+  (route/not-found "Not Found"))
 
 (def app
   (wrap-defaults app-routes site-defaults))
