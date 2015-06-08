@@ -7,10 +7,12 @@
   [db table-name]
   (let [sql (str "SELECT * FROM "
                  table-name ";")]
-      (ic/to-dataset (doall (jdbc/query db sql)))))
+      (-> (jdbc/query db sql)
+          doall
+          ic/to-dataset)))
 
 (def db {:subprotocol "sqlite"
          :subname "data/small-sample.sqlite"
          :classname "org.sqlite.JDBC"})
 
-;(load-table-data db 'people)
+(load-table-data db 'people)
