@@ -15,4 +15,4 @@
          :subname "data/small-sample.sqlite"
          :classname "org.sqlite.JDBC"})
 
-(load-table-data db 'people)
+;(load-table-data db 'people)
